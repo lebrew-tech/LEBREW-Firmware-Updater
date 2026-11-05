@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="docs/assets/lebrew-logo.png" alt="LEBREW" width="120">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/lebrew-wordmark-white.png">
+    <img src="docs/assets/lebrew-wordmark-black.png" alt="LEBREW" width="320">
+  </picture>
 </p>
 
 <h1 align="center">LEBREW Firmware Updater</h1>
