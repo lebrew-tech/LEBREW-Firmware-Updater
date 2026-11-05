@@ -82,6 +82,14 @@ Both builds are available from the latest GitHub Release. The macOS build is uni
 
 The current Windows build is unsigned, so Windows SmartScreen may show a warning.
 
+## Troubleshooting
+
+- **Error 2:** if the log says `FileNotFoundError(2)`, reconnect USB, detect the device again and select the current port. Close other serial apps.
+- **Download or checksum failed:** check your connection and download again. Do not skip verification.
+- **Still stuck:** copy the run log and include your updater version, product model and exact error when contacting support.
+
+[Detailed errors and fixes (English)](https://github.com/lebrew-tech/LEBREW-Firmware-Updater/issues/2) · [中文](https://github.com/lebrew-tech/LEBREW-Firmware-Updater/issues/1)
+
 ## About this repository
 
 This is a **public product showcase**, not the product source repository. It intentionally does not contain proprietary source code, firmware images, release tooling, credentials or internal infrastructure details.

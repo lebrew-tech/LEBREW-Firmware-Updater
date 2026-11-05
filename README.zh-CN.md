@@ -82,6 +82,14 @@ Windows 与 macOS 版本均可从最新 GitHub Release 下载。macOS 为通用�
 
 当前 Windows 版本未做数字签名，Windows SmartScreen 可能显示提示。
 
+## 常见问题
+
+- **错误码 2**：日志含 `FileNotFoundError(2)` 时，重新插拔 USB、重新识别并选择当前串口，同时关闭其他串口软件。
+- **下载或校验失败**：检查网络后重新下载，不要跳过校验。
+- **仍然失败**：复制运行记录，联系支持时提供工具版本、产品型号和完整报错。
+
+[详细报错与解决办法（中文）](https://github.com/lebrew-tech/LEBREW-Firmware-Updater/issues/1) · [English](https://github.com/lebrew-tech/LEBREW-Firmware-Updater/issues/2)
+
 ## 关于这个仓库
 
 这是一个**公开产品展示仓库**，不是产品源码仓库。这里不会包含专有源代码、固件文件、发布工具、凭据或内部基础设施信息。
