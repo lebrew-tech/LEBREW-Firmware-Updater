@@ -19,21 +19,31 @@
   <a href="https://github.com/lebrew-tech/LEBREW-Firmware-Updater/releases/latest/download/LEBREW-Firmware-Updater.exe">
     <img src="docs/assets/download-windows.svg" alt="下载 Windows 版" width="280">
   </a>
-  <a href="https://github.com/lebrew-tech/LEBREW-Firmware-Updater/releases/latest/download/LEBREW-Firmware-Updater-macos-universal.zip">
+  <a href="https://lebrew-firmware-2026.oss-ap-southeast-1.aliyuncs.com/lebrew/clients/LEBREW-Firmware-Updater-v1.2.0-macos.zip">
     <img src="docs/assets/download-macos.svg" alt="下载 macOS 版" width="280">
   </a><br>
-  Windows 10/11 与 macOS（Intel + Apple Silicon）· 点击即从最新 Release 直接下载。
+  v1.2.0 · Windows 10/11 x64 与 macOS（Intel + Apple Silicon）。
 </p>
 
 <p align="center">
-  <sub><b>macOS：</b>解压后双击 <code>LEBREW Firmware Updater.app</code>；首次被拦截就右键 →「打开」。</sub>
+  <sub><b>macOS：</b>解压后双击 <code>LEBREW Firmware Updater.app</code>；首次打开如需系统批准，可查看 <a href="https://support.apple.com/en-us/102445">Apple 的操作说明</a>。</sub>
 </p>
 
-![LEBREW 固件升级工具演示](docs/demo/LEBREW-Firmware-Updater-Field-Manual.gif)
+![LEBREW 固件升级工具演示](docs/demo/LEBREW-Firmware-Updater-v1.2.0-Field-Manual.gif)
 
 <p align="center">
-  20 秒功能演示 · <a href="docs/demo/LEBREW-Firmware-Updater-Field-Manual-60fps.mp4">查看 60 fps 高清版</a>
+  v1.2.0 演示 · 20 秒 · <a href="docs/demo/LEBREW-Firmware-Updater-v1.2.0-Field-Manual-60fps.mp4">查看 60 fps 高清版</a> · <a href="docs/demo/LEBREW-Firmware-Updater-Field-Manual-60fps.mp4">旧版演示</a>
 </p>
+
+## v1.2.0 新功能
+
+- **在 App 内检查和安装更新。** 点击顶栏「检查 App 更新」。Windows 和 macOS 发布版检测到新版本后，可在 App 内下载、校验和安装。从旧版升级时，请先手动安装一次 v1.2.0。
+- **按需选择设备烧录方式。** 「下载并烧录」默认只更新设备主程序。售后恢复时，可开启右下角的「完整烧录」。工具会核对设备分区布局，保留标定和设备设置。
+- **单独复位。** 点击「单独复位」即可重启当前串口连接的设备。
+- **两款新品即将发售。** 产品列表第一是 **BrewMaster Linea** 智能咖啡电子秤，第二是 **AquaDou** 咖啡二合一检测仪，均标注「即将发售」。
+- **新版开场和按钮动画。** 内置 LEBREW 大字标从两侧汇聚，按钮按下时有动画反馈。
+
+[v1.2.0 发布说明和校验值](https://github.com/lebrew-tech/LEBREW-Firmware-Updater/releases/tag/v1.2.0)
 
 ## 固件更新不该像开盲盒
 
@@ -67,7 +77,7 @@ LEBREW 固件升级工具把这条容易出错的流程整理成一次清楚的�
 ## 减少本可避免的失误
 
 - 开始烧录前先验证下载内容。
-- 默认走常规更新路径，不会轻易触发破坏性恢复。
+- 默认更新主程序。开启完整烧录后，工具会先核对设备分区布局。
 - 烧录前把产品、版本和串口放在一起确认。
 - 客户不需要理解芯片地址或命令行参数。
 
@@ -76,9 +86,9 @@ LEBREW 固件升级工具把这条容易出错的流程整理成一次清楚的�
 | 平台 | 状态 |
 | --- | --- |
 | Windows | 已提供 — 已打包桌面程序 |
-| macOS | 已提供 — Intel 与 Apple Silicon 通用版（未签名） |
+| macOS | 已提供 — Intel 与 Apple Silicon 通用版 |
 
-Windows 与 macOS 版本均可从最新 GitHub Release 下载。macOS 为通用版（Intel + Apple Silicon），但未签名、未公证，首次打开需右键「打开」。
+最新版 GitHub Release 提供 Windows 安装包和 macOS 下载链接。macOS 通用版采用临时签名，未做 Apple 公证。首次打开可参考 [Apple 的操作说明](https://support.apple.com/en-us/102445)。
 
 当前 Windows 版本未做数字签名，Windows SmartScreen 可能显示提示。
 
