@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/lebrew-tech/LEBREW-Firmware-Updater/releases/latest/download/LEBREW-Firmware-Updater.exe">
+  <a href="https://github.com/lebrew-tech/LEBREW-Firmware-Updater/releases/download/v1.2.0/LEBREW-Firmware-Updater.exe?download=1">
     <img src="docs/assets/download-windows.svg" alt="Download for Windows" width="280">
   </a>
   <a href="https://lebrew-firmware-2026.oss-ap-southeast-1.aliyuncs.com/lebrew/clients/LEBREW-Firmware-Updater-v1.2.0-macos.zip">
