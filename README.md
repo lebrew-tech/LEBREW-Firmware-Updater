@@ -8,7 +8,7 @@
 <h1 align="center">LEBREW Firmware Updater</h1>
 
 <p align="center">
-  A clearer, safer way to keep LEBREW devices up to date.
+  Plug in over USB and pick your LEBREW model. The updater finds the firmware and checks it before flashing.
 </p>
 
 <p align="center">
@@ -29,31 +29,33 @@
   <sub><b>macOS:</b> unzip → double-click <code>LEBREW Firmware Updater.app</code>. If macOS asks for approval, see <a href="https://support.apple.com/en-us/102445">Apple’s first-launch instructions</a>.</sub>
 </p>
 
+## 🎬 A 20-second look around
+
 ![LEBREW Firmware Updater product walkthrough](docs/demo/LEBREW-Firmware-Updater-v1.2.0-Field-Manual.gif)
 
 <p align="center">
   v1.2.0 walkthrough · 20 seconds · <a href="docs/demo/LEBREW-Firmware-Updater-v1.2.0-Field-Manual-60fps.mp4">Watch the 60 fps version</a> · <a href="docs/demo/LEBREW-Firmware-Updater-Field-Manual-60fps.mp4">Previous walkthrough</a>
 </p>
 
-## What’s new in v1.2.0
+## ✨ Fresh in v1.2.0
 
-- **Update the desktop app online.** Select **Check app updates** in the toolbar. When a newer release is available, the packaged Windows and macOS apps can download, verify and install it. Install v1.2.0 manually once if you are upgrading from an older release.
-- **Choose how to flash device firmware.** **Download & flash** updates the device's main program by default. Enable the small **Full flash** toggle for recovery. It checks the device's flash layout and preserves calibration and settings.
-- **Restart a connected device separately.** **Reset device** restarts the device on the selected USB port.
-- **Two products are coming soon.** The picker puts **BrewMaster Linea** (smart coffee scale) first and **AquaDou** (two-in-one coffee analyzer) second. Both are marked **Coming Soon**.
-- **A new opening animation.** The built-in LEBREW wordmark animates in from both sides. Buttons now animate on press.
+- ⬆️ **The updater can update itself.** Select **Check app updates** in the toolbar. When a newer release is available, the packaged Windows and macOS apps can download, verify and install it. Install v1.2.0 manually once if you are upgrading from an older release.
+- 🧰 **One button for everyday updates, one toggle for recovery.** **Download & flash** updates the device's main program by default. Enable the small **Full flash** toggle for recovery. It checks the device's flash layout and preserves calibration and settings.
+- 🔄 **Give the device a quick restart.** **Reset device** restarts the device on the selected USB port.
+- 👀 **Two new faces in the product picker.** The picker puts **BrewMaster Linea** (smart coffee scale) first and **AquaDou** (two-in-one coffee analyzer) second. Both are marked **Coming Soon**.
+- ✨ **A new entrance for the LEBREW wordmark.** The built-in LEBREW wordmark animates in from both sides. Buttons now animate on press.
 
 [v1.2.0 release notes and checksums](https://github.com/lebrew-tech/LEBREW-Firmware-Updater/releases/tag/v1.2.0)
 
-## Firmware updates should not feel like a guessing game
+## 🧭 Firmware updates, minus the guessing game
 
-Finding the right firmware, choosing the right port and entering the right flash options used to require several tools and a lot of manual checking. One wrong choice can leave a device unable to boot.
+The firmware is in one folder, the flashing tool is in another, and plugging in USB has just added a few more port names to the list. Pick the wrong combination and the device may fail to boot.
 
-LEBREW Firmware Updater turns that process into one guided flow for customers, sales and support teams:
+Here’s the route the updater gives customers, sales and support teams.
 
 > **Choose a product → use the latest version → detect the device → verify the download → flash → restart**
 
-## What it handles
+## 🔧 What the updater handles
 
 - **Guided product selection** — recognizable product cards make the correct model easy to choose.
 - **Latest version by default** — older builds stay available when a rollback is needed.
@@ -64,7 +66,7 @@ LEBREW Firmware Updater turns that process into one guided flow for customers, s
 - **English and Chinese UI** — switch language without leaving the app.
 - **Local fallback** — a local firmware package can be selected when an online update is unavailable.
 
-## Five steps
+## 🚀 From USB to restart in five steps
 
 1. Connect the device over USB.
 2. Choose the product model.
@@ -74,14 +76,14 @@ LEBREW Firmware Updater turns that process into one guided flow for customers, s
 
 The interface keeps the important states visible: selected model, firmware version, checksum result, serial port, update mode and current status.
 
-## Built for fewer avoidable mistakes
+## 🛡️ Before you press Flash
 
 - Downloads are validated before any flashing begins.
 - The main-program update is the default. Full flash is an explicit choice and checks the device layout.
 - Product, version and port are shown together before the update starts.
 - The app is designed to work without asking customers to learn chip addresses or command-line tools.
 
-## Platform
+## 💻 Pick your platform
 
 | Platform | Status |
 | --- | --- |
@@ -92,7 +94,7 @@ The latest GitHub Release links to the Windows executable and the macOS download
 
 The current Windows build is unsigned, so Windows SmartScreen may show a warning.
 
-## Troubleshooting
+## 🛟 When a step gets stuck
 
 - **Error 2:** if the log says `FileNotFoundError(2)`, reconnect USB, detect the device again and select the current port. Close other serial apps.
 - **Download or checksum failed:** check your connection and download again. Do not skip verification.
@@ -112,4 +114,4 @@ The walkthrough uses sample product and version data. Product names, logos and i
 
 ---
 
-**Choose the model. Let the updater do the rest.**
+☕ Take a sip while the device restarts. Unplug the USB cable once the restart is complete.
